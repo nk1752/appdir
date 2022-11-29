@@ -1,21 +1,21 @@
 import Image from 'next/image'
-import Link from 'next/link'
+import Link from 'next/link';
 import styles from './page.module.css'
 
-export default function Home() {
+function About() {
   return (
     <div className={styles.container}>
+      
       <main className={styles.main}>
+        
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js 13!</a>
+          Back to <Link href="/">Home Page</Link>
         </h1>
-
-        <h1 className={styles.title}>
-          <Link href='/about'> About</Link>
-        </h1>
-               
+        
       </main>
 
     </div>
   )
 }
+
+export default About;
